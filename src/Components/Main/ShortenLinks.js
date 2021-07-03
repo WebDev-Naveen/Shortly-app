@@ -46,6 +46,8 @@ const LinkSection = styled.div`
   margin-top: -20px;
   padding: 20px;
   @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding-left: 0;
   }
 `;
 const ShortenLink = styled.div`
@@ -93,8 +95,9 @@ const ShortenLink = styled.div`
     padding-bottom: 5px;
     justify-content: center;
     width: 100%;
+
     a {
-      margin-left: 15px;
+      margin-left: 10px;
       padding-bottom: 10px;
     }
     button {

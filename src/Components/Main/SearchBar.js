@@ -112,6 +112,7 @@ const Section = styled.div`
   text-align: center;
   border-radius: 5px;
   @media only screen and (max-width: 600px) {
+    max-width: 85%;
     height: 180px;
     background-image: url("/images/bg-shorten-mobile.svg");
   }
@@ -202,14 +203,10 @@ const LineBar = styled.div`
   margin: auto;
   top: -200px;
   @media only screen and (max-width: 600px) {
-    border: 5px solid #2acfcf;
-    height: 600px;
-    width: 0px;
-    position: absolute;
-    left: 50%;
-    margin-left: 0px;
-    top: 1300px;
-    margin-left: -8px;
-    bottom: -2000px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+    width: 500px;
+    top: -400px;
+    right: 65px;
   }
 `;

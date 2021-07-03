@@ -85,6 +85,7 @@ const Topic = styled.div`
   }
   @media only screen and (max-width: 600px) {
     font-size: 14px;
+
     p {
       width: 100%;
     }
@@ -97,6 +98,7 @@ const StatsSection = styled.div`
   height: 260px;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
+
     height: 750px;
     width: 100%;
     text-align: center;
@@ -106,12 +108,13 @@ const Stat = styled.div`
   background-color: #fff;
   border-radius: 5px;
   padding: 15px;
-
   margin: 10px;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 `;
 const StatImg = styled.div`

@@ -126,7 +126,8 @@ const FooterIcons = styled.div`
     }
   }
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    width: 75%;
+    overflow: hidden;
     margin-left: 50px;
   }
 `;
