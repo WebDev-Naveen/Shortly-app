@@ -207,6 +207,6 @@ const LineBar = styled.div`
     transform: rotate(90deg);
     width: 500px;
     top: -400px;
-    right: 65px;
+    right: 68px;
   }
 `;
