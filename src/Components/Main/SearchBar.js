@@ -21,7 +21,7 @@ function SearchBar() {
       shortenLink: "https://rel.ink/gob3X9",
     },
   ]);
-
+  //function to change input value
   function handleChange(e) {
     setInputValue(e.target.value);
   }
