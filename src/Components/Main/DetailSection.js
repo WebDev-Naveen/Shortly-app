@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-function Section() {
+function DetailSection() {
   return (
     <Div>
       <Content>
@@ -21,7 +21,7 @@ function Section() {
   );
 }
 
-export default Section;
+export default DetailSection;
 const Div = styled.section`
   width: 80%;
   margin: auto;
@@ -76,7 +76,9 @@ const ContentTitle = styled.div`
     opacity: 0.5;
   }
   @media only screen and (max-width: 600px) {
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
     h1 {
       font-size: 36px;
       line-height: 40px;
@@ -85,7 +87,7 @@ const ContentTitle = styled.div`
       font-size: 16px;
       margin-top: 5px;
     }
-    width: 100%;
+    width: 80%;
     text-align: center;
   }
 `;
@@ -94,8 +96,8 @@ const ContentImg = styled.div`
   overflow: hidden;
   @media only screen and (max-width: 600px) {
     width: 100%;
-
-    margin-bottom: 20px;
+    height: 280px;
+    ${"" /* margin-bottom: 20px; */}
   }
 `;
 const Image = styled.img`

@@ -28,6 +28,7 @@ function Stats() {
             </StatDetail>
           </Stat>
         </StatBox1>
+        <span></span>
         <StatBox2>
           <Stat>
             <StatImg>
@@ -46,6 +47,7 @@ function Stats() {
             </StatDetail>
           </Stat>
         </StatBox2>
+        <span></span>
         <StatBox3>
           <Stat>
             <StatImg>
@@ -96,12 +98,24 @@ const StatsSection = styled.div`
   justify-content: space-around;
   margin-top: 150px;
   height: 260px;
+  span {
+    background-color: #2acfcf;
+    width: 30%;
+    height: 10px;
+    position: absolute;
+    margin: 60px;
+  }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
-
     height: 750px;
     width: 100%;
     text-align: center;
+    span {
+      right: 50%;
+      width: 2%;
+      height: 90%;
+      margin: 0 auto;
+    }
   }
 `;
 const Stat = styled.div`
@@ -120,7 +134,7 @@ const Stat = styled.div`
 const StatImg = styled.div`
   border-radius: 50%;
   background-color: #3b3054;
-  width: 27%;
+  width: 25%;
   height: 55px;
   text-align: center;
   padding-top: 14px;

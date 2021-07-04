@@ -28,9 +28,9 @@ const Nav = styled.nav`
     width: 90%;
     background-color: #3b3054;
     visibility: ${(props) => (props.shoNav ? "visible" : "hidden")};
-    height: 350px;
+    height: 340px;
     position: absolute;
-    left: 0;
+    left: 5px;
     border-radius: 5px;
     top: 60px;
     z-index: 1;

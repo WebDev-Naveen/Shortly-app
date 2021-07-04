@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Stats from "./Stats";
 import ShortenLinks from "./ShortenLinks";
-function SearchBar() {
+function MiddleSection() {
   const [inputValue, setInputValue] = useState("");
   const [codeRed, setCodeRed] = useState(false);
   const [enterLink, setEnterLink] = useState("");
@@ -89,12 +89,11 @@ function SearchBar() {
       </Section>
       <ShortenLinks data={data} />
       <Stats />
-      <LineBar></LineBar>
     </Div>
   );
 }
 
-export default SearchBar;
+export default MiddleSection;
 const Div = styled.div`
   background-color: #bfbfbf;
   margin-bottom: 0;
@@ -192,21 +191,5 @@ const Button = styled.button`
     padding: 10px;
     margin-top: 10px;
     margin-left: 0;
-  }
-`;
-const LineBar = styled.div`
-  width: 50%;
-  background-color: #2acfcf;
-  position: relative;
-  height: 10px;
-  z-index: 0;
-  margin: auto;
-  top: -200px;
-  @media only screen and (max-width: 600px) {
-    -ms-transform: rotate(90deg); /* IE 9 */
-    transform: rotate(90deg);
-    width: 500px;
-    top: -400px;
-    right: 70px;
   }
 `;

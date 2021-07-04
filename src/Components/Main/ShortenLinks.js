@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 import styled from "styled-components";
 
@@ -70,6 +70,9 @@ const ShortenLink = styled.div`
     text-decoration: none;
     color: #2acfcf;
     padding-top: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   button {
     border: none;
@@ -97,6 +100,7 @@ const ShortenLink = styled.div`
     width: 100%;
 
     a {
+      width: 80%;
       margin-left: 10px;
       padding-bottom: 10px;
     }

@@ -68,7 +68,7 @@ const Div = styled.div`
   padding-top: 20px;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
-    height: 850px;
+    height: 750px;
   }
 `;
 const FooterLogo = styled.div`
@@ -126,8 +126,11 @@ const FooterIcons = styled.div`
     }
   }
   @media only screen and (max-width: 600px) {
-    width: 75%;
+    padding: 0;
+    padding-top: 20px;
+    justify-content: center;
+    width: 100%;
     overflow: hidden;
-    margin-left: 50px;
+    margin: 0 auto;
   }
 `;
