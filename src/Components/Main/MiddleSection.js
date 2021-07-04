@@ -7,6 +7,7 @@ function MiddleSection() {
   const [codeRed, setCodeRed] = useState(false);
   const [enterLink, setEnterLink] = useState("");
   const [loading, setLoading] = useState(false);
+
   const [data, setData] = useState([
     {
       original: "https://www.frontendmentor.io",
@@ -33,7 +34,7 @@ function MiddleSection() {
     setEnterLink(inputValue);
     setInputValue("");
   }
-
+  //fetching api
   useEffect(() => {
     if (enterLink) {
       setLoading(true);
@@ -48,6 +49,7 @@ function MiddleSection() {
                 original: responseData.result.original_link,
               },
             ];
+            //after getting data ,checking if link already shorten or not
             let findIndex = data.findIndex(
               (e) => e.original === tempLink[0].original
             );
@@ -65,6 +67,7 @@ function MiddleSection() {
             console.log(responseData.result.full_short_link);
           }
         });
+
       setEnterLink("");
     }
   }, [enterLink]);
