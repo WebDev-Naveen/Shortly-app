@@ -43,6 +43,15 @@ const FooterIcons = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 1052px) {
+    width: 25%;
+    padding-left: 0px;
+    padding-top: 15px;
+    overflow: hidden;
+    a {
+      margin: 10px;
+    }
+  }
   @media only screen and (max-width: 600px) {
     padding: 0;
     padding-top: 20px;

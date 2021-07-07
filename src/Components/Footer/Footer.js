@@ -30,6 +30,9 @@ const FooterLogo = styled.div`
   width: 40%;
   text-align: center;
   padding-top: 10px;
+  @media only screen and (max-width: 1052px) {
+    width: 30%;
+  }
   @media only screen and (max-width: 600px) {
     width: 100%;
   }

@@ -188,11 +188,16 @@ const Button = styled.button`
   :disabled {
     background-color: black;
   }
+  @media only screen and (max-width: 1052px) {
+    font-size: 14px;
+    width: 18%;
+  }
   @media only screen and (max-width: 600px) {
     width: 92%;
     height: 80px;
     padding: 10px;
     margin-top: 10px;
     margin-left: 0;
+    margin-right: 0;
   }
 `;

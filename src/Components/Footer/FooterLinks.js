@@ -36,6 +36,9 @@ export default FooterLinks;
 const FooterSection = styled.div`
   width: 40%;
   display: flex;
+  @media only screen and (min-width: 1052px) {
+    width: 50%;
+  }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     width: 100%;
@@ -44,13 +47,21 @@ const FooterSection = styled.div`
 `;
 const FooterLink = styled.div`
   width: 30%;
+  @media only screen and (max-width: 1052px) {
+    text-align: center;
+    width: 33%;
+  }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
 `;
-const LinkTitle = styled.h5``;
+const LinkTitle = styled.h5`
+  @media only screen and (max-width: 1052px) {
+    font-size: 15px;
+  }
+`;
 const Links = styled.div`
   display: flex;
   flex-direction: column;

@@ -23,6 +23,11 @@ const Nav = styled.nav`
   display: flex;
   width: 60vw;
   justify-content: space-between;
+  @media only screen and (max-width: 1052px) {
+    margin-top: 5px;
+    justify-content: space-around;
+    width: 90%;
+  }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     width: 90%;
@@ -40,6 +45,9 @@ const Nav = styled.nav`
 const Navlink = styled.a`
   color: #9e9aa7;
   text-decoration: none;
+  @media only screen and (max-width: 1052px) {
+    font-size: 14px;
+  }
   @media only screen and (max-width: 600px) {
     padding-bottom: 20px;
     color: #fff;
@@ -52,8 +60,10 @@ const Div = styled.div`
   margin-top: 10px;
 
   a:hover {
-    ${"" /* font-weight: 700; */}
     color: black;
+  }
+  @media only screen and (max-width: 1052px) {
+    width: 50%;
   }
   @media only screen and (max-width: 600px) {
     border-bottom: 1px solid #fff;
@@ -64,8 +74,7 @@ const Div = styled.div`
     justify-content: center;
     align-items: center;
     a:hover {
-      ${"" /* font-weight: 700; */}
-      opacity:0.5;
+      opacity: 0.5;
       color: #fff;
     }
   }
@@ -88,6 +97,11 @@ const UserAuth = styled.div`
     color: #fff;
     border-radius: 40px;
   }
+  @media only screen and (max-width: 1052px) {
+    width: 30%;
+    height: 20px;
+    font-size: 14px;
+  }
   @media only screen and (max-width: 600px) {
     a {
       width: 90%;
@@ -98,6 +112,7 @@ const UserAuth = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     width: 100%;
   }
 `;

@@ -27,6 +27,10 @@ const Head = styled.div`
   margin-top: 10px;
   margin-left: 80px;
   margin-right: 80px;
+  @media only screen and (max-width: 1052px) {
+    margin-left: 100px;
+    margin-right: 40px;
+  }
   @media only screen and (max-width: 600px) {
     margin-left: 20px;
     margin-right: 20px;

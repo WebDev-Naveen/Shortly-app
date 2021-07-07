@@ -31,6 +31,7 @@ const Div = styled.section`
   @media only screen and (max-width: 600px) {
     top: 40px;
     height: 580px;
+
     width: 100%;
     margin-top: 0;
   }
@@ -38,12 +39,12 @@ const Div = styled.section`
 const Content = styled.div`
   width: 100%;
   display: flex;
+  @media only screen and (max-width: 1052px) {
+    text-align: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   @media only screen and (max-width: 600px) {
-    ${
-      "" /* position: relative;
-    top: -300px; */
-    }
-
     z-index: 0;
     flex-direction: column-reverse;
   }
@@ -75,6 +76,9 @@ const ContentTitle = styled.div`
   a:hover {
     opacity: 0.5;
   }
+  @media only screen and (max-width: 1052px) {
+    width: 90%;
+  }
   @media only screen and (max-width: 600px) {
     margin: 0 auto;
     margin-bottom: 10px;
@@ -94,10 +98,13 @@ const ContentTitle = styled.div`
 const ContentImg = styled.div`
   width: 50%;
   overflow: hidden;
+  @media only screen and (max-width: 1052px) {
+    margin-top: 30px;
+    width: 90%;
+  }
   @media only screen and (max-width: 600px) {
     width: 100%;
     height: 280px;
-    ${"" /* margin-bottom: 20px; */}
   }
 `;
 const Image = styled.img`
